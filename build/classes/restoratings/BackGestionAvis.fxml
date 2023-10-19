@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="559.0" prefWidth="753.0" style="-fx-background-color: #303030;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restoratings.BackGestionAvisController">
+   <children>
+      <TextField fx:id="recheercheParUsernameTextfield" layoutX="38.0" layoutY="29.0" prefHeight="27.0" prefWidth="108.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #fea347; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: #ffffff;" />
+      <Button fx:id="supprimerbk" layoutX="260.0" layoutY="88.0" mnemonicParsing="false" onAction="#supprimer" text="supprimer" />
+      <TextField fx:id="recheercheParRestoTextfield" layoutX="37.0" layoutY="87.0" prefHeight="27.0" prefWidth="108.0" promptText="Restaurant" style="-fx-background-color: transparent; -fx-border-color: #fea347; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: #ffffff;" />
+      <TableView fx:id="tableviewback" layoutX="4.0" layoutY="204.0" prefHeight="336.0" prefWidth="746.0">
+        <columns>
+          <TableColumn fx:id="userbk" prefWidth="69.0" text="username" />
+          <TableColumn fx:id="titreAvisbk" prefWidth="184.0" text="Titre Avis" />
+            <TableColumn fx:id="pubavbk" prefWidth="237.0" text="Publication Avis" />
+            <TableColumn fx:id="restobk" prefWidth="123.0" text="Restaurant" />
+            <TableColumn fx:id="datebk" prefWidth="131.0" text="Date Avis" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="Rechdate" layoutX="31.0" layoutY="149.0" />
+   </children>
+</AnchorPane>

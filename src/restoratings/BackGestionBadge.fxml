@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="559.0" prefWidth="753.0" style="-fx-background-color: #303030;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restoratings.BackGestionBadgeController">
+   <children>
+      <TextField fx:id="TypeBadgeRech" layoutX="38.0" layoutY="29.0" prefHeight="27.0" prefWidth="108.0" promptText="TypeBadge" style="-fx-background-color: transparent; -fx-border-color: #fea347; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: #ffffff;" />
+      <Button fx:id="supprimerbk" layoutX="260.0" layoutY="88.0" mnemonicParsing="false" onAction="#supprimerback" text="supprimer" />
+      <TextField fx:id="RestoNameRech" layoutX="37.0" layoutY="87.0" prefHeight="27.0" prefWidth="108.0" promptText="Restaurant Name" style="-fx-background-color: transparent; -fx-border-color: #fea347; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: #ffffff;" />
+      <TableView fx:id="tabviewRech" layoutX="12.0" layoutY="244.0" prefHeight="306.0" prefWidth="731.0">
+        <columns>
+          <TableColumn fx:id="usert" prefWidth="96.0" text="Username" />
+          <TableColumn fx:id="restot" prefWidth="160.0" text="Restaurant" />
+            <TableColumn fx:id="commantairet" prefWidth="232.0" text="Commantaire" />
+            <TableColumn fx:id="typebadget" prefWidth="118.0" text="Type Badge" />
+            <TableColumn fx:id="datet" prefWidth="124.0" text="Date" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="dateRech" layoutX="31.0" layoutY="177.0" />
+      <TextField fx:id="UsernameRech" layoutX="38.0" layoutY="134.0" prefHeight="27.0" prefWidth="108.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #fea347; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: #ffffff;" />
+   </children>
+</AnchorPane>

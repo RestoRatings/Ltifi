@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.TilePane?>
+
+<AnchorPane id="AnchorPane" prefHeight="579.0" prefWidth="774.0" style="-fx-background-color: #303030;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restoratings.GestionBadgeController">
+   <children>
+      <AnchorPane prefHeight="579.0" prefWidth="215.0" style="-fx-background-color: #fea347;">
+         <children>
+            <Button fx:id="btnAjouterBadge" layoutX="25.0" layoutY="372.0" mnemonicParsing="false" onAction="#ajouterBadge" prefHeight="42.0" prefWidth="167.0" styleClass="btn" stylesheets="@GestionAis.css" text="Ajouter" />
+            <Button fx:id="btnModifierBadge" layoutX="25.0" layoutY="429.0" mnemonicParsing="false" onAction="#updateBadge" prefHeight="42.0" prefWidth="167.0" styleClass="btn" stylesheets="@GestionAis.css" text="Modifier" />
+            <Button fx:id="btnSupprimerBadge" layoutX="25.0" layoutY="486.0" mnemonicParsing="false" onAction="#supprimerBadg" prefHeight="42.0" prefWidth="167.0" styleClass="btn" stylesheets="@GestionAis.css" text="Supprimer" />
+            <ImageView fitHeight="232.0" fitWidth="205.0" layoutX="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/b.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="215.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/a.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ComboBox fx:id="comboBoxRestaurant" layoutX="413.0" layoutY="231.0" prefWidth="150.0" />
+      <Label layoutX="236.0" layoutY="-14.0" prefHeight="56.0" prefWidth="98.0" styleClass="field" stylesheets="@GestionAis.css" text="Type Badge :" textFill="#fea347">
+         <padding>
+            <Insets bottom="6.0" left="12.0" right="18.0" top="31.0" />
+         </padding>
+      </Label>
+      <Label layoutX="236.0" layoutY="200.0" prefHeight="56.0" prefWidth="150.0" styleClass="field" stylesheets="@GestionAis.css" text="Nom de Restaurant :" textFill="#fea347">
+         <padding>
+            <Insets bottom="6.0" left="12.0" right="18.0" top="31.0" />
+         </padding>
+      </Label>
+      <ComboBox fx:id="comboBoxTypeBadge" layoutX="377.0" layoutY="17.0" onAction="#select" prefWidth="150.0" />
+      <Label layoutX="227.0" layoutY="52.0" prefHeight="56.0" prefWidth="150.0" styleClass="field" stylesheets="@GestionAis.css" text="commentaire :" textFill="#fea347">
+         <padding>
+            <Insets bottom="6.0" left="12.0" right="18.0" top="31.0" />
+         </padding>
+      </Label>
+      <TextArea fx:id="commentaireTextArea" layoutX="311.0" layoutY="115.0" prefHeight="95.0" prefWidth="334.0" />
+      <BorderPane layoutX="236.0" layoutY="333.0">
+         <center>
+            <TilePane prefHeight="246.0" prefWidth="392.0">
+               <children>
+                  <TableView fx:id="tableViewBadge" prefHeight="216.0" prefWidth="513.0">
+                    <columns>
+                      <TableColumn fx:id="userCol" prefWidth="75.0" text="User" />
+                      <TableColumn fx:id="nomRestoCol" prefWidth="105.0" text="Nom Restaurant" />
+                        <TableColumn fx:id="badgeCol" prefWidth="105.0" text="Badge" />
+                        <TableColumn fx:id="commentaireCol" prefWidth="105.0" text="commentaire" />
+                        <TableColumn fx:id="DateCol" prefWidth="122.0" text="Date" />
+                    </columns>
+                  </TableView>
+               </children>
+            </TilePane>
+         </center>
+      </BorderPane>
+      <TextField fx:id="RestoNameTextfieldBadge" layoutX="236.0" layoutY="293.0" prefHeight="27.0" prefWidth="150.0" promptText="Resto Name" style="-fx-background-color: transparent; -fx-border-color: #fea347; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: #ffffff;" />
+      <TextField fx:id="BadgeRechTextfieldBadge1" layoutX="418.0" layoutY="293.0" prefHeight="27.0" prefWidth="150.0" promptText="Badge Name" style="-fx-background-color: transparent; -fx-border-color: #fea347; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: #ffffff;" />
+      <Button fx:id="btnMesBdges" layoutX="611.0" layoutY="294.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="86.0" styleClass="cancel-btn" stylesheets="@GestionAis.css" text="Mes Badge" />
+   </children>
+</AnchorPane>

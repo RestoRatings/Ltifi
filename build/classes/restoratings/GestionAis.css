@@ -1,0 +1,69 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 11, 2023, 1:28:24 AM
+    Author     : Ltifi
+*/
+/* Style par défaut du bouton */
+.btn {
+    -fx-background-color: #303030;
+    -fx-text-fill: white;
+}
+
+/* Lorsque le curseur est dessus */
+.btn:hover {
+    -fx-background-color: #ff8c00; /* Changer la couleur au survol */
+}
+
+/* Lorsque le bouton est pressé */
+.btn:pressed {
+    -fx-background-color: #ff4500; /* Changer la couleur lorsqu'il est pressé */
+}
+
+/* Style pour un bouton de type annuler */
+.cancel-btn {
+    -fx-background-color: #303030; /* Changer la couleur de fond */
+    -fx-text-fill: white;
+}
+
+/* Lorsque le curseur est dessus */
+.cancel-btn:hover {
+    -fx-background-color: #444; /* Changer la couleur au survol */
+}
+
+/* Lorsque le bouton est pressé */
+.cancel-btn:pressed {
+    -fx-background-color: #555; /* Changer la couleur lorsqu'il est pressé */
+}
+
+.txt{
+    -fx-border-color:  #fea347; /* Couleur de la bordure */
+    -fx-border-width: 2px; /* Largeur de la bordure */
+    -fx-padding: 5px; /* Marge intérieure */
+}
+
+.field{
+    
+
+-fx-border-color: #fea347;
+-fx-border-width: 0px 0px 2px 0px;
+}
+/* Style de la TableView */
+.my-table-view {
+    -fx-background-color: #303030;
+    -fx-font-size: 14px;
+}
+
+/* Style des cellules de la TableView */
+.my-table-cell {
+    -fx-alignment: center-left;
+    -fx-background-color:  #fea347;
+}
+
+/* Style des cellules de la TableView en survol */
+.my-table-cell:hover {
+    -fx-background-color: lightgray;
+}

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <left>
+        <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #fea347;" BorderPane.alignment="CENTER">
+            <children>
+                <!-- Logo et texte de bienvenue -->
+                <ImageView fitHeight="112.0" fitWidth="122.0" layoutX="34.0" layoutY="222.0">
+                    <image>
+                        <Image url="@../../../../../Desktop/PIZA.png" />
+                    </image>
+                </ImageView>
+                <Text fill="#303030" layoutX="32.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resto Ratings">
+                    <font>
+                        <Font name="System Bold" size="45.0" />
+                    </font>
+                </Text>
+
+                <!-- Icônes -->
+                <ImageView fitHeight="94.0" fitWidth="93.0" layoutX="132.0" layoutY="38.0">
+                    <image>
+                        <Image url="@../../../../../Desktop/433138.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="106.0" fitWidth="109.0" layoutX="199.0" layoutY="225.0">
+                    <image>
+                        <Image url="@../../../../../Downloads/Hamburger-cheeseburger-cartoon-character-on-transparent-background-PNG-removebg-preview.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="93.0" fitWidth="107.0" layoutX="116.0" layoutY="331.0">
+                    <image>
+                        <Image url="@../../../../../Downloads/81443502-icône-de-livraison-de-ligne-mince-illustration-vectorielle-isolée-sur-fond-blanc-pictogramme-removebg-preview.png" />
+                    </image>
+                </ImageView>
+
+                <!-- Texte de bienvenue -->
+                <Text fill="#303030" layoutX="42.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Votre bien-être nous tient à cœur.">
+                    <font>
+                        <Font name="Viner Hand ITC" size="17.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane prefHeight="500.0" prefWidth="415.0" style="-fx-background-color: #303030;" BorderPane.alignment="CENTER">
+            <children>
+                <!-- Champs de connexion -->
+                <TextField layoutX="118.0" layoutY="186.0" promptText="UserName" style="-fx-background-color: transparent; -fx-border-color: #fea347; -fx-border-width: 0px 0px 2px 0px;" />
+                <PasswordField layoutX="119.0" layoutY="256.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #fea347; -fx-border-width: 0px 0px 2px 0px;" />
+
+                <!-- Icônes pour les champs de connexion -->
+                <FontAwesomeIconView fill="#fea347" glyphName="USER" layoutX="83.0" layoutY="210.0" size="20" />
+                <FontAwesomeIconView fill="#fea347" glyphName="KEY" layoutX="81.0" layoutY="281.0" size="20" text="" />
+
+                <!-- Bouton de connexion -->
+                <Button layoutX="147.0" layoutY="315.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="75.0" style="-fx-background-color: #fea347;" text="Login">
+               <font>
+                  <Font name="Yu Gothic Bold" size="12.0" />
+               </font></Button>
+
+                <!-- Lien pour récupérer le mot de passe -->
+                <Hyperlink layoutX="119.0" layoutY="392.0" text="Forgot Your Password?" textFill="#fea347" />
+
+                <!-- Icône d'utilisateurs et titre -->
+                <FontAwesomeIconView fill="#fea347" glyphName="USERS" layoutX="156.0" layoutY="97.0" size="35" text="" />
+                <Text fill="#fea347" layoutX="119.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Users Login">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Text>
+
+                <!-- Bouton de fermeture de la fenêtre -->
+                <Button layoutX="323.0" layoutY="3.0" mnemonicParsing="false" onAction="#exit" style="-fx-background-color: transparent;" textFill="#005599" />
+                <FontAwesomeIconView fill="#fea347" glyphName="CLOSE" layoutX="323.0" layoutY="23.0" size="20" />
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

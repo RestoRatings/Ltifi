@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="restoratings.jnlp">
+  <information>
+    <title>restoratings</title>
+    <vendor>Med-Amine</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\controlsfx-8.40.11-javadoc.jar" size="2442089" download="eager" />
+    <jar href="lib\controlsfx-8.40.11.jar" size="985420" download="eager" />
+    <jar href="lib\fxsampler-1.0.9.jar" size="30952" download="eager" />
+    <jar href="lib\javafx-graphics-22-ea+11-linux.jar" size="4690580" download="eager" />
+    <jar href="lib\javafx-graphics-22-ea+11.jar" size="306" download="eager" />
+    <jar href="lib\javafx-media-22-ea+11-linux.jar" size="1476151" download="eager" />
+    <jar href="lib\javafx-media-22-ea+11.jar" size="303" download="eager" />
+    <jar href="lib\jfoenix-9.0.10.jar" size="2432549" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+    <jar href="restoratings.jar" size="16555699" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="restoratings" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="restoratings.Restoratings"  name="restoratings" />
+  <update check="always"/>
+</jnlp>

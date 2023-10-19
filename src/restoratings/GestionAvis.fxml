@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="565.0" prefWidth="755.0" style="-fx-background-color: #303030;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restoratings.GestionAvisController">
+   <children>
+      <AnchorPane prefHeight="565.0" prefWidth="216.0" style="-fx-background-color: #fea347;">
+         <children>
+
+            <Button fx:id="btnAjouter" layoutX="26.0" layoutY="318.0" mnemonicParsing="false" onAction="#ajouterAvis" prefHeight="40.0" prefWidth="165.0" styleClass="btn" stylesheets="@GestionAis.css" text="Ajouter" textFill="#b90505" />
+            <ImageView fitHeight="234.0" fitWidth="216.0">
+               <image>
+                  <Image url="@img/download_(1)-transformed.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnModifier" layoutX="26.0" layoutY="389.0" mnemonicParsing="false" onAction="#updateAvis" prefHeight="40.0" prefWidth="165.0" styleClass="btn" stylesheets="@GestionAis.css" text="modifier" textFill="#b90505" />
+            <Button fx:id="btnSupprimer" layoutX="26.0" layoutY="459.0" mnemonicParsing="false" onAction="#supprimerAvis" prefHeight="40.0" prefWidth="165.0" styleClass="btn" stylesheets="@GestionAis.css" text="supprimer" textFill="#b90505" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="227.0" layoutY="97.0" prefHeight="56.0" prefWidth="126.0" styleClass="field" stylesheets="@GestionAis.css" text="Publication Avis :" textFill="#fea347">
+         <padding>
+            <Insets bottom="6.0" left="12.0" right="18.0" top="31.0" />
+         </padding>
+      </Label>
+      <TextArea fx:id="pubavisTextArea" layoutX="300.0" layoutY="169.0" prefHeight="114.0" prefWidth="334.0" />
+      <TextField fx:id="titreavisTextfield" layoutX="227.0" layoutY="14.0" prefHeight="27.0" prefWidth="324.0" promptText="Titre Avis" style="-fx-background-color: transparent; -fx-border-color: #fea347; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: #ffffff;" />
+      <Label layoutX="227.0" layoutY="41.0" prefHeight="56.0" prefWidth="98.0" styleClass="field" stylesheets="@GestionAis.css" text="Restaurant :" textFill="#fea347">
+         <padding>
+            <Insets bottom="6.0" left="12.0" right="18.0" top="31.0" />
+         </padding>
+      </Label>
+      <ComboBox fx:id="comboBoxRestaurant" layoutX="342.0" layoutY="69.0" prefWidth="150.0" />
+      <TextField fx:id="RestoNameTextfield1" layoutX="227.0" layoutY="315.0" prefHeight="27.0" prefWidth="150.0" promptText="Resto Name" style="-fx-background-color: transparent; -fx-border-color: #fea347; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: #ffffff;" />
+      <TableView fx:id="tabviewAvis" layoutX="217.0" layoutY="354.0" prefHeight="164.0" prefWidth="567.0">
+        <columns>
+          <TableColumn fx:id="usernameCol" prefWidth="95.0" text="Username" />
+          <TableColumn fx:id="nomRestoCol" prefWidth="107.0" text="Nom Restaurant" />
+            <TableColumn fx:id="titreCol" prefWidth="166.0" text="Titre" />
+            <TableColumn fx:id="pubCol" prefWidth="157.0" text="Publication" />
+            <TableColumn fx:id="dateCol" prefWidth="91.0" text="Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
